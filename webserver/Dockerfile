@@ -95,7 +95,7 @@ RUN chown -R magento2:magento2 /home/magento2 && \
 # Delete user password to connect with ssh with empty password
 RUN passwd magento2 -d
 
-EXPOSE 80 22 5000 44100
+EXPOSE 80 22 44100
 WORKDIR /home/magento2
 
 USER root
